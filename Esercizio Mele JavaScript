@@ -1,0 +1,26 @@
+var giornisettimana = ["Lunedì", "Martedì", "Mercoledì", "Giovedì", "Venerdì", "Sabato", "Domenica"];
+
+var numeroMele = 5;
+console.log("Ho " + numeroMele + " mele da mangiare questa settimana");
+
+for (var i = 0; i < giornisettimana.length; i++) {
+    if (numeroMele === 2) {
+        break; // fermati quando restano 2 mele
+    }
+
+    if (giornisettimana[i] === "Mercoledì") {
+        console.log("Oggi è Mercoledì, salto la mela!");
+        continue; // salta il mercoledì
+    }
+
+
+
+    numeroMele--;
+    console.log(giornisettimana[i] + " - Ho mangiato una mela, ne sono rimaste " + numeroMele);
+}
+
+//fine ciclo for
+
+console.log("Ho finito di mangiare le mele");
+
+//termine del file
